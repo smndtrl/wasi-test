@@ -1,0 +1,12 @@
+
+[workspace]
+
+members = [
+    "guest",
+    "host"
+]
+
+[workspace.dependencies]
+wasmtime = { git = "https://github.com/bytecodealliance/wasmtime", rev = "5fc1252"}
+wasmtime-wasi = { git = "https://github.com/bytecodealliance/wasmtime", rev = "5fc1252"}
+tokio = { version = "1", features = [ "full" ]}

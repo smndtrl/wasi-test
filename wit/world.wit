@@ -1,0 +1,15 @@
+package smndtrl:simple;
+
+/// An example world for the component to target.
+world example {
+    // import wasi:http/types@0.2.0-rc-2023-11-05;
+    // import wasi:http/outgoing-handler@0.2.0-rc-2023-11-05;
+    import wasi:http/types@0.2.0-rc-2023-10-18;
+    import wasi:http/outgoing-handler@0.2.0-rc-2023-10-18;
+
+    export function;
+}
+
+interface function {
+     map: func(input: list<u8>) -> list<u8>;
+}
