@@ -3,6 +3,7 @@
 
 members = [
     "guest",
+    "guestcommand",
     "host"
 ]
 

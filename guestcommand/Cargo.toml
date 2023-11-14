@@ -1,0 +1,31 @@
+[package]
+name = "guestcommand"
+version = "0.1.0"
+edition = "2021"
+
+[package.metadata.component]
+package = "smndtrl:command-extended"
+
+
+[package.metadata.component.dependencies]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cargo-component-bindings = "0.4.1"
+anyhow = "1.0.75"
+
+[package.metadata.component.target]
+world = "command-extended"
+
+[package.metadata.component.target.dependencies]
+# "wasi:poll" = { path = "../wit/deps/poll"}
+"wasi:io" = { path = "../wit/deps/io" }
+"wasi:http" = { path = "../wit/deps/http" }
+"wasi:clocks" = { path = "../wit/deps/clocks" }
+"wasi:random" = { path = "../wit/deps/random" }
+"wasi:cli" = { path = "../wit/deps/cli" }
+"wasi:filesystem" = { path = "../wit/deps/filesystem" }
+"wasi:sockets" = { path = "../wit/deps/sockets" }
+"wasi:logging" = { path = "../wit/deps/logging" }
+

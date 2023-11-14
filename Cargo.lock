@@ -665,6 +665,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "guestcommand"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "cargo-component-bindings",
+]
+
+[[package]]
 name = "hashbrown"
 version = "0.13.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"

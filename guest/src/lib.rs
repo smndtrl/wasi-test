@@ -20,6 +20,7 @@ impl Guest for Component {
         )
         .unwrap();
 
-        return res.body;
+        // return res.body;
+        return vec![15,14,13]
      }
 }
